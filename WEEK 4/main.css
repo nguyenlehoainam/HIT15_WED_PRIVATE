@@ -1,0 +1,116 @@
+
+body{
+    background-color: #fffde8;
+}
+.sanPham{
+    width: 50%;
+    border-radius: 20px;
+    margin: 50px auto;
+    background-color: rgb(255, 255, 255);
+    padding:50px ;
+    font-family:serif
+}
+
+.anhMau{
+    width: 100%;
+    height: 250px;
+}
+.sanPhamA{
+    color: #1c97e2;
+}
+
+.hangMoi,
+.phoBien,
+.khuyenMai,
+.duocYeuThich,
+.benVung,
+.baoHanh1Nam,
+.thanhToanAnToan,
+.hoTroKhachHang,
+.damBaoAnToan,
+.camKet,
+.doiTra{
+    background-color: #a8d2f3;
+    border-radius: 5px;
+}
+
+.themVaoGioHang{
+    margin-top: 12px;
+    background-color: #f95c39;
+    width: 150px;
+    height: 35px;
+    color: aliceblue;
+
+}
+
+.aoGam{
+   
+    width: 50px;
+    height: 50px;
+}
+.aoHLE{
+    width: 50px;
+    height: 50px;
+}
+
+.guidanhgia{
+    background-color: #3a9ad7 ;
+    color: aliceblue;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+.nhapDanhGia{
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.sanPhamLienQuan{
+    font-size: 25px;
+    font-weight: bold;
+}
+.danhGiaSanPham{
+    font-size: 20px;
+}
+.chiaSeSanPham{
+    font-size: 20px;
+}
+
+/* .instagram,
+.faceBook,
+.twiter{
+    width: 65px;
+    height: 40px;
+} */
+
+.faceBook{
+    margin-top: 10px;
+    background-color: #3c5399;
+    color: aliceblue;
+    border-radius: 5px;
+}
+.twiter{
+    background-color: #1c97e2 ;
+    color: aliceblue;
+    border-radius: 5px;
+}
+.instagram{
+    background-color: #c03a86;
+    color: aliceblue;
+    border-radius: 5px;
+}
+.thietKeBenVung,
+.vaiThoangKhi,
+.congNgheChongNhan,
+.gia49{
+    color: #00b762 ;
+}
+.tinhNangDacBiet,
+.thongTinBoSung,
+.thongTinChiTiet,
+.tinhNangNoiBat,
+.huongDanSuDung{
+    font-size: 30px;
+}
+
