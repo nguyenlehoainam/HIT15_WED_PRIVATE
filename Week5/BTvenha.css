@@ -1,0 +1,92 @@
+body{
+    padding: 100px;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/001/410/432/non_2x/pink-fluid-dynamic-abstract-background-free-vector.jpg)
+}
+.header{
+    background-image: url(https://i.pinimg.com/564x/1a/bf/28/1abf28feb548112c7e10011c403d00a7.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center;
+    padding: 100px;
+    display: flex;
+    justify-content: center;   
+}
+
+.header_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.collection{
+    font-size: 100px;
+    color: rgb(255, 1, 1);
+    padding: 20px;
+}
+.search{
+    width: 600px;
+    height: 70px;
+    border-radius: 30px;
+  
+}
+.bottom_element{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.left_button{
+    border: none;
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: orange;
+    color: rgb(0, 0, 0);
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.left_button:hover{
+    background-color: darkorange;
+    color: white;
+}
+.all_left_button{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    
+
+}
+.order_now{
+    border: none;
+    background-color: orange;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.order_now:hover{
+   background-color:darkorange ;
+   color: white;
+}
+.Beige_Casual_Bag,
+.Brown_Casual_Bag,
+.orange_Casual_bag{
+    text-align: center;
+    font-size: 45px;
+    color: brown;
+    font-weight: bold;
+    
+}
+img{
+    width: 400px;
+    height: 300px;
+}
