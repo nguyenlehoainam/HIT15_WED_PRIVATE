@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+.navbar{
+    width: 1120px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 159px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+
+.logo{
+position: absolute;
+width: 120.93px;
+height: 24.93px;
+left: 159.07px;
+top: 42.54px;
+}
+.home{
+    color: #FF7D00;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu{
+    width: 465px;
+    height: 24px;
+    position: absolute;
+    top: 43px;
+    left: 463px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.login{
+    width: 112px;
+    height: 50px;
+    position: absolute;
+    left: 1028px;
+    top:30px;
+    border-radius: 25px;
+    color: #F67102;
+    background-color: #E7E7E7;
+    border-style: none;
+    font-size: 16px;
+  
+}
+.signup{
+    background-image: linear-gradient( to right, #F67102 ,#F4A91E);
+    color: #ffff;
+    position: absolute;
+    width: 127px;
+    height: 50px;
+    position: absolute;
+    border-radius: 25px;
+    left: 1153px ;
+    top:30px ;
+    border-style: none;
+    font-size:16px ;
+    
+}
+.text{
+    width: 496px;
+    height:366px ;
+    position:   absolute;
+    top: 214px;
+    left: 153px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    
+}
+.title{
+    /* position: absolute;
+    top: 214px;
+    left: 155px; */
+    width: 228px;
+    height: 20px;
+    font-size: 13px;
+    color: #FF7D00;
+    font-weight: 500;
+
+
+}
+.weare{
+    /* position: relative;
+    top: 252px;
+    left: 153px; */
+    width: 436px;
+    height: 117px;
+    font-size: 50px;
+    color:#051441;
+    line-height: 56px;
+    font-weight: 700;
+}
+.subline{
+    /* position: relative;
+    top: 394px;
+    left: 153px; */
+    color: #5D677E;
+    font-size: 16px;
+    font-weight: 26px;
+    width: 496px;
+    height: 78px;
+
+}
+
+.get_started{
+    width: 149px;
+    height: 56px;
+    border-radius: 41px;
+    background-image: linear-gradient(to right,#F67102 ,#F4A91E);
+    color: #ffff;
+    border-style: none;
+    position: absolute;
+   
+}
+.video_button{
+    width: 59px;
+    height: 59px;
+    background-color: #ffff;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 185px;
+   box-shadow:  rgba(0, 0, 0, 0.5) 1px 25px 20px -17px;
+
+  
+}
+.tam_giac{
+    width: 16px;
+    height: 16px;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    background-image: linear-gradient(to right,#F67102 ,#F4A91E);
+    rotate: 90deg;
+  
+}
+.watch_video{
+    position: absolute;
+    left: 298px;
+    top: 387px;   
+    color: #051441;
+}
+.rectangle{
+        position: relative;
+        top: 140px;
+        right: 50px;
+        width: 530px;
+        height: 380px;
+        background-image: linear-gradient( -75deg, #724AE5,#4991E5, #365DE6);
+        border-radius: 20px;
+        transform: perspective(400px) rotateY(-20deg);
+}
+.mask_group{
+    width: 512px;
+    height: 555px;
+    position: absolute;
+    top: 100px;
+    left: 772px;
+}
+.man{
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+.abstract1{
+    position: absolute;
+    top: 180px;
+    left: -100px;
+    gap: 0px;
+    opacity: 0px;
+}
+.card{
+position: absolute;
+left: 160px;
+top: 480px;
+}
+.card1{
+    position: absolute;
+    top: 420px;
+    left: -30px;
+}
+.sabstract2{
+    position: absolute;
+    top: 90px;
+    left: 400px;
+}
+.abstract3{
+    position: absolute;
+    top: 370px;
+    left: 400px;
+}
+.insta{
+    position: absolute;
+    top: 250px;
+    left: 400px;
+}
+.twitter{
+    position: absolute;
+    top: 370px;
+    left: 270px;
+}
+.ellipse1{
+    position: absolute;
+    top: 180px;
+    left: 370px;
+}
+.ellispe2{
+    position: absolute;
+    top: 400px;
+    left: 30px;
+
+}
+.ellispe3{
+    position: absolute;
+    top: 500px;
+    left: 480px;
+}
+
+
+
+
+
+   
