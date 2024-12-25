@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hello word</p>
+
+
+<script>
+    let day = prompt("hôm nay là ngày bao nhiêu?");
+day = day.toLowerCase();
+if (day === "hôm nay là thứ 7" || day === "hôm nay là chủ nhật") {
+    alert(day.charAt(0).toUpperCase() + day.slice(1) + " hôm nay là cuối tuần.");
+} else {
+    alert(day.charAt(0).toUpperCase() + day.slice(1) + " hôm nay là ngày đi làm.");
+}
+
+</script>
+
+</body>
+</html>

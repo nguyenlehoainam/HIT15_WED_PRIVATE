@@ -1,0 +1,222 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.board-members, .activities, .classes {
+    padding: 50px;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: auto;
+} */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+}
+.header{
+    height: 964px;
+    background-image: url(./imgss/sinh-nhat.jpg);
+    background-repeat: no-repeat;
+    padding:36px;
+}
+.navbar{
+    width: 1368px;
+    height: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+}
+.nav{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+.cac_ban_con{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 20px;
+    font-size: 20px;
+    gap: 24px;
+    align-items: end;
+    margin-right: 10px;
+    color: rgb(23, 22, 22);
+    font-weight: bold;
+}
+.li_cac_ban_con:hover{
+    color: chocolate;
+}
+.cac_ban{
+    width: 180px;
+    height: 154px;
+    border-radius: 20px;  
+    background-color: blanchedalmond;
+    position: relative;
+    left: 1184px;
+}
+.bottom_infor{
+    width: 1006px;
+    height: 295px;
+    position: relative;
+    top:384px;
+}
+.bottom_infor1{
+    font-size: 54px;
+    font-weight: bold;
+    color: white;
+}
+.bottom_infor2{
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin-top: 28px;
+}
+.BanChuNhiem{
+    font-size: 44px;
+    font-weight: bold;
+    display: flex;
+    align-self: center ;
+    margin-bottom: 70px;
+    margin-top: 100px
+}
+.ban_chu_nhiem{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.ava1,
+.ava2,
+.ava3
+{
+    width: 184px;
+    height: auto;
+    margin: 10px;
+    border-radius: 20px;
+   
+}
+.pho_hoat{
+    position: relative;
+    left: 350px;
+    top : 20px;
+}
+.pho_hoc_tap{
+    position: relative;
+    left: 950px;
+    top:-238px;
+
+}
+.banchunhiem1{
+    display: flex;
+    gap: 80px;
+    border-style: solid;
+    border-width: bold;
+    border-color: rgb(169, 168, 168);
+    width: 440px;  
+    border-radius: 20px;
+}
+.banchunhiem2{
+    position: relative;
+    left: -60px;
+    top: 50px;
+    width:300px;
+    
+    
+}
+.nguyenvana{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -5px;
+    
+}
+.chunhiem{
+    font-size: 24px;
+    font-weight: bold;
+    color: chocolate;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

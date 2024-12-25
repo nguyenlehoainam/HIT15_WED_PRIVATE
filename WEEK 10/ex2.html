@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        let month = prompt("Nhập tháng của bạn: ");
+month = month.toLowerCase();
+let days;
+
+switch (month) {
+    case "1":
+    case "3":
+    case "5":
+    case "7":
+    case "8":
+    case "10":
+    case "12":
+        days = 31;
+        break;
+    case "4":
+    case "6":
+    case "9":
+    case "11":
+        days = 30;
+        break;
+    case "2":
+        days = 28;
+        break;
+    default:
+        days = "nhập số tháng không hợp lệ";
+}
+
+alert( " tháng " + month.charAt(0).toUpperCase() + month.slice(1) + " có " + days + " ngày");
+
+    </script>
+</body>
+</html>

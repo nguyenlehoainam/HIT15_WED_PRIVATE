@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let numbers = prompt("Nhập các số, cách nhau bằng dấu phẩy (,):");
+let numberArray = numbers.split(",").map(Number);
+
+let max = Math.max(...numberArray);
+let min = Math.min(...numberArray);
+let evenCount = numberArray.filter(num => num % 2 === 0).length;
+
+
+alert("Số lớn nhất: " + max);
+alert("Số nhỏ nhất: " + min);
+alert("Số chẵn: " + evenCount);
+
+    </script>
+</body>
+</html>
