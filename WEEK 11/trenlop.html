@@ -1,0 +1,90 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document Object Model</title>
+  </head>
+  <body>
+
+    <div class="container">
+    <h1 class="title" id="first-title">First Title</h1>
+    <h1 class="title" id="second-title">Second Title</h1>
+    <h1 class="title" id="third-title">Third Title</h1>
+    <h1></h1>
+    <a href="">aaaa</a>
+    </div>
+    <img />
+
+
+<script>
+   //another way to setting an attribute
+   const titles = document.querySelectorAll("h1");
+   titles[3].classList.add("title", "header-title");
+   titles[3].classList.remove("title", "header-title");
+    titles[3].textContent = "Fourth Title";
+
+   const container = document.querySelector(".container");
+    container.textContent = "ahahahaha"
+
+
+console.log(titles);
+
+const link = document.querySelector("a");
+link.href = "https://www.youtube.com/";
+</script>
+
+  </body>
+</html>
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript for Everyone:DOM</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Asabeneh Yetayeh challenges in 2020</h1>
+      <h2>30DaysOfJavaScript Challenge</h2>
+      <ul></ul>
+    </div>
+    <script>
+      const lists = `
+            <li>30DaysOfPython Challenge Done</li>
+            <li>30DaysOfJavaScript Challenge Ongoing</li>
+            <li>30DaysOfReact Challenge Coming</li>
+            <li>30DaysOfFullStack Challenge Coming</li>
+            <li>30DaysOfDataAnalysis Challenge Coming</li>
+            <li>30DaysOfReactNative Challenge Coming</li>
+            <li>30DaysOfMachineLearning Challenge Coming</li>`;
+
+    const titles = document.querySelectorAll("h1");
+    titles[0].style.backgroundColor = "green"
+    titles[0].style.color = "red";
+      const ul = document.querySelector("ul");
+      ul.innerHTML = lists;
+
+      
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model:30 Days Of JavaScript</title>
+  </head>
+
+  <body>
+    <script>
+      // creating multiple elements and appending to parent element
+      let title;
+      for (let i = 0; i < 3; i++) {
+        title = document.createElement("h1");
+        title.className = "title";
+        title.style.fontSize = "24px";
+        title.textContent = i;
+        document.body.appendChild(title);
+      }
+    </script>
+  </body>
+</html>

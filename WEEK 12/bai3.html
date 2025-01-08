@@ -1,69 +1,89 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vẽ Hình Đơn Giản</title>
     <link rel="stylesheet" href="bai3.css">
 </head>
-<body>
-    <h1>Vẽ Hình Đơn Giản</h1>
-    <div>
-        <label>Chiều rộng: <input type="number" id="width" placeholder="Nhập chiều rộng"></label><br>
-        <label>Chiều cao: <input type="number" id="height" placeholder="Nhập chiều cao"></label><br>
-        <label>Padding: <input type="number" id="padding" placeholder="Nhập padding"></label><br>
-        <label>Margin: <input type="number" id="margin" placeholder="Nhập margin"></label><br>
-        <label>Màu nền (Hex, RGB, RGBA): <input type="text" id="bgColor" placeholder="Nhập màu nền"></label><br>
-        <label>Hình nền (Đường link online): <input type="text" id="bgImage" placeholder="Nhập đường dẫn hình nền"></label><br>
-        <label>Màu chữ: <input type="color" id="textColor" placeholder="Nhập màu chữ"></label><br>
-        <label>Nội dung nhỏ: <input type="text" id="content" placeholder="Nhập nội dung"></label><br>
-        <button id="drawBtn">Vẽ Hình</button>
-        <button id="resetBtn">Reset</button>
-    </div>
-    <div id="shapeContainer"></div>
 
+<body>
+    <div class="main-container">
+        <div class="form-container">
+            <h1>Vẽ hình v1.0</h1>
+            <table>
+                <tr>
+                    <td><label for="width">Chiều rộng</label></td>
+                    <td><input type="text" id="width" placeholder="Nhập chiều rộng"></td>
+                </tr>
+                <tr>
+                    <td><label for="height">Chiều cao</label></td>
+                    <td><input type="text" id="height" placeholder="Nhập chiều cao"></td>
+                </tr>
+                <tr>
+                    <td><label for="padding">Padding</label></td>
+                    <td><input type="text" id="padding" placeholder="Nhập padding"></td>
+                </tr>
+                <tr>
+                    <td><label for="margin">Margin</label></td>
+                    <td><input type="text" id="margin" placeholder="Nhập margin"></td>
+                </tr>
+                <tr>
+                    <td><label for="background">Màu nền (Hex, RGBA)</label></td>
+                    <td><input type="text" id="background" placeholder="Nhập màu nền"></td>
+                </tr>
+                <tr>
+                    <td><label for="background-image">Hình nền (Đường link online)</label></td>
+                    <td><input type="text" id="background-image" placeholder="Nhập đường dẫn hình nền"></td>
+                </tr>
+                <tr>
+                    <td><label for="color">Màu chữ</label></td>
+                    <td><input type="text" id="color" placeholder="Nhập màu chữ" /></td>
+                </tr>
+                <tr>
+                    <td><label for="content">Nội dung nhỏ</label></td>
+                    <td><input type="text" id="content" placeholder="Nhập nội dung" /></td>
+                </tr>
+            </table>
+            <button class="draw-button">Vẽ hình</button>
+            <button class="reset-button">Reset</button>
+        </div>
+        <hr>
+        <div class="result-container">
+            <div class="shape-container">Xin chào</div>
+        </div>
+    </div>
     <script>
-        document.getElementById('drawBtn').addEventListener('click', function () {
-            const width = document.getElementById('width').value;
-            const height = document.getElementById('height').value;
-            const padding = document.getElementById('padding').value;
-            const margin = document.getElementById('margin').value;
-            const bgColor = document.getElementById('bgColor').value;
-            const bgImage = document.getElementById('bgImage').value;
-            const textColor = document.getElementById('textColor').value;
-            const content = document.getElementById('content').value;
+        document.querySelector('.draw-button').addEventListener('click', function () {
+            const width = document.querySelector('#width').value;
+            const height = document.querySelector('#height').value;
+            const padding = document.querySelector('#padding').value;
+            const margin = document.querySelector('#margin').value;
+            const bgColor = document.querySelector('#background').value;
+            const bgImage = document.querySelector('#background-image').value;
+            const textColor = document.querySelector('#color').value;
+            const content = document.querySelector('#content').value;
         
-            const shapeContainer = document.getElementById('shapeContainer');
-            shapeContainer.innerHTML = ''; // Xóa hình cũ
-        
-            const shape = document.createElement('div');
-            shape.id = 'shape';
-            shape.style.width = `${width}px`;
-            shape.style.height = `${height}px`;
-            shape.style.padding = `${padding}px`;
-            shape.style.margin = `${margin}px`;
-            shape.style.backgroundColor = bgColor;
-            shape.style.color = textColor;
-            shape.style.backgroundImage = `url(${bgImage})`;
-            shape.style.backgroundSize = 'cover';
-            shape.style.backgroundPosition = 'center';
-            shape.textContent = content;
-        
-            shapeContainer.appendChild(shape);
+            const output = document.querySelector('.shape-container');
+            output.style.display = 'block';
+            output.style.width = `${width}px`;
+            output.style.height = `${height}px`;
+            output.style.padding = `${padding}px`;
+            output.style.margin = `${margin}px`;
+            output.style.backgroundColor = bgColor;
+            output.style.backgroundImage = `url(${bgImage})`;
+            output.style.color = textColor;
+            output.textContent = content;
         });
         
-        document.getElementById('resetBtn').addEventListener('click', function () {
-            document.getElementById('width').value = '';
-            document.getElementById('height').value = '';
-            document.getElementById('padding').value = '';
-            document.getElementById('margin').value = '';
-            document.getElementById('bgColor').value = '';
-            document.getElementById('bgImage').value = '';
-            document.getElementById('textColor').value = '';
-            document.getElementById('content').value = '';
-            document.getElementById('shapeContainer').innerHTML = '';
+        document.querySelector('.reset-button').addEventListener('click', function () {
+            const output = document.querySelector('.shape-container');
+            output.removeAttribute('style');
+            output.textContent = 'Xin chào';
         });
-        
+
     </script>
 </body>
+
 </html>

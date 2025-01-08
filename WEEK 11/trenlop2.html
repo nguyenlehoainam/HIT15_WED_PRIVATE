@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model:30 Days Of JavaScript</title>
+  </head>
+
+  <body>
+    
+    <script>
+        const ul = document.createElement("ul");
+
+        let li;
+        for (let i = 0; i < 4; i++) {
+
+          li = document.createElement("li");
+          li.className = "items";
+          li.style.color = "green"
+          li.style.fontSize = "32px";
+          li.textContent = `item ${i+1} `
+          ul.appendChild(li);
+        }
+        document.body.appendChild(ul)
+      
+    </script>
+  </body>
+</html>

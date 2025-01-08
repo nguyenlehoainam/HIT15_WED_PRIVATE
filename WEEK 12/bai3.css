@@ -1,33 +1,84 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
+    font-family: 'Be Vietnam Pro', Segoe UI;
+}
+
+.main-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    flex-direction: row;
 }
 
-label {
-    margin-bottom: 10px;
+.form-container {
+    padding: 48px; 
+    width: 600px; 
 }
 
-#shapeContainer {
-    margin-top: 20px;
-    border: 2px dashed #ccc;
-    padding: 20px;
+table {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-collapse: collapse;
+    margin: 30px 0;
 }
 
-#shape {
-    display: inline-block;
-    text-align: center;
+td {
+    width: 50%;
+    padding: 16px; 
+    border: 1px solid black;
 }
 
-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
+input {
+    border: none;
+    outline: none;
+    cursor: text;
+}
+
+.draw-button,
+.reset-button {
+    width: 112px; 
+    height: 56px; 
+    border: none;
+    outline: none;
+    color: aliceblue;
+}
+
+.draw-button {
+    background-color: #F06C25;
+}
+
+.reset-button {
+    background-color: #B1B1B1;
+}
+
+.result-container {
+    left: 29%;
+    position: relative;
+}
+
+.shape-container {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: zoom 2s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@keyframes zoom {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
 }
