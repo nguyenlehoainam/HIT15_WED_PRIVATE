@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai1</title>
+    <link rel="stylesheet" href="bai1.css">
+</head>
+
+<body>
+    <!-- html -->
+    <div class="result">Thông báo hiển thị tại đây!</div>
+    <div class="calculator">
+        <h1>Tính chỉ số BMI</h1>
+        <div class="input-section">
+            <div class="input-container">
+                <h3>Cân nặng(kg):</h3>
+                <input type="number" id="weight" placeholder="Nhập cân nặng">
+            </div>
+            <div class="input-container">
+                <h3>Chiều cao(m):</h3>
+                <input type="number" id="height" placeholder="Nhập chiều cao">
+            </div>
+            <button>Tính toán</button>
+        </div>
+    </div>
+    <!-- script -->
+    <script>
+        const result = document.querySelector(".result");
+        const weight = document.querySelector("#weight");
+        const height = document.querySelector("#height");
+        const button = document.querySelector("button");
+
+        
+        function tinh() {
+            if (weight.value <= 0 || height.value <= 0) {
+                result.textContent = "Nhập không hợp lệ. Vui lòng nhập lại";
+                return;
+            }
+            let bmi = weight.value / (height.value * height.value);
+            bmi = bmi.toFixed(2);
+            if (bmi < 18.5) {
+                result.textContent = `BMI: ${bmi}. Cơ thể bạn quá gầy.`;
+                return;
+            }
+            else if (bmi < 24.9) {
+                result.textContent = `BMI: ${bmi}. Cơ thể bạn đang rất khỏe mạnh.`;
+                return;
+            }
+            else if (bmi < 29.9) {
+                result.textContent = `BMI: ${bmi}. Bạn đang bị thừa cân.`;
+                return;
+            }
+            else if (bmi < 34.9) {
+                result.textContent = `BMI: ${bmi}. Bạn đang bị béo phì cấp độ I.`;
+                return;
+            }
+            else if (bmi < 39.9) {
+                result.textContent = `BMI: ${bmi}. Bạn đang bị béo phì cấp độ II.`;
+                return;
+            }
+            else {
+                result.textContent = `BMI: ${bmi}. Bạn đang bị béo phì cấp độ III.`;
+                return;
+            }
+
+        }
+        button.addEventListener("click",tinh)
+    </script>
+</body>
+
+</html>

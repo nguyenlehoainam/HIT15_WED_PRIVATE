@@ -1,0 +1,67 @@
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 0 300px 0 300px;
+    margin-top: 120px;
+}
+
+.inputField {
+    border: 3px solid #79D7BE;
+    padding: 5px 13px;
+    width: 400px;
+    outline: none;
+}
+
+.generateButton {
+    background-color: #79D7BE;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+}
+
+.numberBox {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 5px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+.resultsContainer {
+    display: flex;
+    gap: 280px;
+}
+
+.evenNumber {
+    background-color: #79d7be;
+}
+
+.oddNumber {
+    background-color: #FDDB3A;
+}
+
+.primeNumber {
+    background-color: #FD5E53;
+}

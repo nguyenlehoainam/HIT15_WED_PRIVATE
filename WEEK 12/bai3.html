@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vẽ Hình Đơn Giản</title>
+    <link rel="stylesheet" href="bai3.css">
+</head>
+<body>
+    <h1>Vẽ Hình Đơn Giản</h1>
+    <div>
+        <label>Chiều rộng: <input type="number" id="width" placeholder="Nhập chiều rộng"></label><br>
+        <label>Chiều cao: <input type="number" id="height" placeholder="Nhập chiều cao"></label><br>
+        <label>Padding: <input type="number" id="padding" placeholder="Nhập padding"></label><br>
+        <label>Margin: <input type="number" id="margin" placeholder="Nhập margin"></label><br>
+        <label>Màu nền (Hex, RGB, RGBA): <input type="text" id="bgColor" placeholder="Nhập màu nền"></label><br>
+        <label>Hình nền (Đường link online): <input type="text" id="bgImage" placeholder="Nhập đường dẫn hình nền"></label><br>
+        <label>Màu chữ: <input type="color" id="textColor" placeholder="Nhập màu chữ"></label><br>
+        <label>Nội dung nhỏ: <input type="text" id="content" placeholder="Nhập nội dung"></label><br>
+        <button id="drawBtn">Vẽ Hình</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+    <div id="shapeContainer"></div>
+
+    <script>
+        document.getElementById('drawBtn').addEventListener('click', function () {
+            const width = document.getElementById('width').value;
+            const height = document.getElementById('height').value;
+            const padding = document.getElementById('padding').value;
+            const margin = document.getElementById('margin').value;
+            const bgColor = document.getElementById('bgColor').value;
+            const bgImage = document.getElementById('bgImage').value;
+            const textColor = document.getElementById('textColor').value;
+            const content = document.getElementById('content').value;
+        
+            const shapeContainer = document.getElementById('shapeContainer');
+            shapeContainer.innerHTML = ''; // Xóa hình cũ
+        
+            const shape = document.createElement('div');
+            shape.id = 'shape';
+            shape.style.width = `${width}px`;
+            shape.style.height = `${height}px`;
+            shape.style.padding = `${padding}px`;
+            shape.style.margin = `${margin}px`;
+            shape.style.backgroundColor = bgColor;
+            shape.style.color = textColor;
+            shape.style.backgroundImage = `url(${bgImage})`;
+            shape.style.backgroundSize = 'cover';
+            shape.style.backgroundPosition = 'center';
+            shape.textContent = content;
+        
+            shapeContainer.appendChild(shape);
+        });
+        
+        document.getElementById('resetBtn').addEventListener('click', function () {
+            document.getElementById('width').value = '';
+            document.getElementById('height').value = '';
+            document.getElementById('padding').value = '';
+            document.getElementById('margin').value = '';
+            document.getElementById('bgColor').value = '';
+            document.getElementById('bgImage').value = '';
+            document.getElementById('textColor').value = '';
+            document.getElementById('content').value = '';
+            document.getElementById('shapeContainer').innerHTML = '';
+        });
+        
+    </script>
+</body>
+</html>
