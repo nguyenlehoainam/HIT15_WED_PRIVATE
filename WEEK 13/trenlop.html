@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> bai 1 </title>
+</head>
+<body>
+    <script>
+        //
+        const arr = [3,5,7,2];
+        function customevery(arr, myCallBack){
+            for (let i = 0; i < arr.length; i++){
+                if (!myCallBack(arr[i], i, arr)) 
+                    return false;
+                }
+            return true;
+            }
+        function myCallBack(currentValue, index, originalArray){
+            return currentValue % 2 == 0;
+        }
+        console.log(customevery(arr, myCallBack));
+    </script>
+</body>
+</html>
